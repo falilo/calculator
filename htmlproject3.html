@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <!--https://github.com/falilo/cmp128finalproject-->
+
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="cssproject3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <form id="MyForm">
 
+        <!--Let create first our input field where all our operations will be displayed-->
         <div>
             <input type="text" id="field">
         </div>
+
+        <!-- Let create our first row with 4 columns that displayed operation signs such as
+        addition, minus, multiplication and division -->
+
         <div class="row">
             <div class="column" id="plus">
                 <button id="plusSign">+
@@ -27,6 +36,29 @@
             </div>
         </div>
 
+        <!-- Let create the row of that contain square button, square root button , delete button 
+        and Save button-->
+
+        <div class="row1">
+            <div class="column1" id="square"> 
+                <button id="sq">sq</button>
+            </div>
+            <div class="column1" id="squareroot">
+                <button id="r">r</button>
+            </div>
+            <div class="column1" id="delete">
+                <button id="d">d</button>
+            </div>
+            <div class="column1" id="save">
+                <button id="S">S</button>
+            </div>
+
+        </div>
+
+        <!--My second row is to display at the first time 2 rows which are 
+        numbers and equal sign. Endthen inside id numbers I created a sub rows 
+        that displayed numbers such as 7,8,8;
+        4,5,6; 1,2,3; and 0,.,c -->
         <div class="row2">
             <div class=column2 id="numbers">
                 <div class="row2_7_8_9">

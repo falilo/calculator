@@ -129,7 +129,13 @@ function plusSign(event) {
 }
 
 let plusSignButton = document.getElementById("plus");
-plusSignButton.addEventListener("click", plusSign);
+if(plusSignButton = document.getElementById("plus")){
+    plusSignButton.addEventListener("click", plusSign);
+}else{
+    plusSignButton.addEventListener("click", false);
+}
+
+
 
 function minusSign(event) {
     console.log("I'm minus sign");
@@ -161,6 +167,48 @@ function divSign(event) {
 
 let divSignButton = document.getElementById("div");
 divSignButton.addEventListener("click", divSign);
+
+/* let create fuctions and event listners for square, square root, delete, and save buttons*/
+function square(event){
+    console.log("I'm square button");
+    input.value = input.value * input.value;
+
+    event.preventDefault();
+}
+
+let squareButton = document.getElementById("square");
+squareButton.addEventListener("click", square);
+
+function squareRoot(event){
+    console.log("I'm square root");
+    input.value = Math.sqrt(input.value);
+
+    event.preventDefault();
+}
+
+let squareRootButton = document.getElementById("squareroot");
+squareRootButton.addEventListener("click", squareRoot);
+
+function deleteNum(event){
+    console.log("I'm delete button");
+    input.value = input.value / 10 | 0;
+
+    event.preventDefault();
+}
+
+let deleteNumButton = document.getElementById("delete");
+deleteNumButton.addEventListener("click", deleteNum);
+
+function save(event){
+    console.log("I'm save button");
+    input.value = input.value;
+
+    event.preventDefault();
+}
+
+let saveButton = document.getElementById("save");
+saveButton.addEventListener("click", save);
+
 
 function equal(event) {
     console.log("I'm equal sign");

@@ -3,22 +3,24 @@
 #bigDiv{
     border: solid 1px;
     margin-left: 520px;
-    margin-right: 5200px;
-    margin-top: 20px;
-    padding: 180px;
+    margin-right: 540px;
+    margin-top: 190px;
+    padding: 240px;
     position: relative;
-    bottom: 390px;
+    bottom: 650px;
+    right: 60px;
     z-index: -1; 
-  /*  background-color: honeydew; */
+  background-color: green; 
 }
 
 input{
     display: block;
-    width: 21%;
+    width: 22%;
     padding: 10px;
-    margin: auto;
+   /* margin: auto; */
     margin-top: 80px;
-   /* margin-left: 80px;
+    margin-left: 540px;
+   /* 
     margin-right: 80px;
      */
 }
@@ -51,12 +53,36 @@ button{
     margin-left: 20px;
 }
 
+.row1{
+    display: flex;
+}
+
+.column1{
+    margin-top: 20px;
+}
+#square{
+    margin-left: 540px;
+}
+
+#squareroot{
+    margin-left: 20px;
+}
+
+#delete{
+    margin-left: 20px;
+}
+
+#save{
+    margin-left: 20px;
+}
+
 .row2{
     display: flex;
 }
 
 .column2{
     margin-top: 20px;
+    
 }
 
 #numbers{
@@ -115,6 +141,9 @@ button{
 
 
 #plusSign, #munisSign, #multiSign, #divSign{
-    background-color: rgb(219, 216, 216); 
+    background-color: rgb(218, 40, 40); 
 }
 
+#sq, #r, #d, #S{
+    background-color: rgb(218, 40, 40); 
+}
